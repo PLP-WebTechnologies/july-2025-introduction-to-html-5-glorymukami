@@ -1,35 +1,69 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/jecSxI3G)
-# 📘 Assignment: HTML5 + Accessibility & SEO Basics
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Welcome to a sample HTML5 website using semantic tags, accessibility best practices, and SEO-friendly structure." />
+  <meta name="keywords" content="HTML5, semantic HTML, accessibility, SEO, web development" />
+  <meta name="author" content="Your Name" />
+  <title>Semantic HTML5 Webpage</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header role="banner">
+    <nav role="navigation" aria-label="Main Navigation">
+      <ul>
+        <li><a href="#home" aria-current="page">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <h1 id="home">Welcome to My Semantic Website</h1>
+  </header>
 
-## Overview
+  <main role="main">
+    <section id="about">
+      <h2>About Us</h2>
+      <p>We build accessible and SEO-friendly websites using modern HTML5 standards. Our goal is to ensure your site is usable by all visitors and easily discoverable on the web.</p>
+    </section>
 
-This assignment will help you solidify your understanding of modern HTML5 structure while applying foundational concepts of web accessibility and search engine optimization (SEO). You’ll create a simple, semantically correct web page that prioritizes both human and machine readability—two pillars of great web design.
+    <section id="services">
+      <h2>Our Services</h2>
+      <article>
+        <h3>Web Development</h3>
+        <p>Custom, responsive, and clean websites tailored to your brand.</p>
+      </article>
+      <article>
+        <h3>Accessibility Audits</h3>
+        <p>We ensure your site complies with WCAG guidelines for inclusive access.</p>
+      </article>
+    </section>
 
-## Objective
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Us</h2>
+      <form action="#" method="POST" aria-label="Contact Form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required aria-required="true" />
 
-Build a basic web page using HTML5 semantic tags, applying accessibility best practices and beginner-friendly SEO principles. Your final output should demonstrate a well-structured layout that supports screen readers and is optimized for discoverability.
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required aria-required="true" />
 
-## Guidelines
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
 
-Use only HTML5. No CSS or JavaScript is required at this stage. Focus on using meaningful semantic elements to structure your page. Avoid using `<div>` or `<span>` unless absolutely necessary. Ensure your page has clearly defined sections such as a header, navigation, main content, and a footer.
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
 
-Incorporate accessibility by using proper HTML5 landmarks and attributes that improve navigation for assistive technologies. Your HTML should reflect thoughtful planning of hierarchy and readability, both for users and search engines.
+  <aside role="complementary">
+    <h2>Latest News</h2>
+    <p>We recently updated our accessibility checklist—check it out to keep your site compliant!</p>
+  </aside>
 
-For SEO, emphasize the use of heading tags in the correct order, provide descriptive text, and ensure your content is both human-readable and crawler-friendly. Consider how a search engine would interpret your page in terms of structure and content clarity.
-
-## Deliverables
-
-A single HTML file named `index.html`. It should include:
-
-* A semantic structure using appropriate HTML5 elements.
-* Clear headings in a logical hierarchy.
-* Accessibility enhancements using proper tags and attributes.
-* SEO-friendly metadata and content.
-
-## Tips
-
-* Use HTML5 semantic tags appropriately.
-* Organize content with accessibility in mind.
-* Apply basic on-page SEO techniques.
-* Follow clean, readable HTML code structure.
-
+  <footer role="contentinfo">
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+</body>
+</html>
